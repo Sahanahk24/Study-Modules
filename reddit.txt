@@ -1,0 +1,61 @@
+As a C++ dev with almost 2 years of experience in a legacy "C with classes" codebase who is learning modern language/STL features on their own time, I thought I'd take a stab at answering these. Any feedback would be helpful!
+
+C++ basics:
+
+Difference between references and pointers? A reference is an alias of a valid object/variable, used to avoid copying. Modifying a reference modifies the original object. A pointer stores the address of a variable, but it can also be initialized using nullptr. Pointers can also be used to avoid copying large objects.
+
+Difference btw memory allocation in stack and on heap? Memory allocated on the stack is automatically deallocated when the associated variable goes out of scope. Memory allocated on the heap requires an explicit delete (either directly, or better: through the use of RAII). If a pointer variable on the stack which points to heap memory goes out of scope before deallocating the heap memory, you have a memory leak.
+
+What kinds of smart points do exist? unique, shared, weak
+
+How unique_ptr is implemented? How do we force that only one owner of the object exist in - unique_ptr ? Unique_ptr is a pointer that implements RAII. When the pointer goes out of scope, the memory it owns is destroyed. This necessitates that it is the sole owner of the pointed-to memory (making it unique). Its copy constructor is delete using "=delete"
+
+How does shared_ptr work? How reference counter is synchronized between objects? Shared_ptr is another RAII pointer, but the pointed-to memory is not destroyed until the last shared_ptr pointing to the memory goes out of scope. There is a shared control block with a reference counter that is visible to all shared_ptrs pointing to the same object.
+
+Can we copy unique_ptr or pass it from one object to another? Unique_ptr is non-copyable. Copying a unique_ptr would break the invariant that it is the sole owner of the memory being pointed to. However, unique_ptr is movable. This maintains the aforementioned invariant, because ownership is transferred.
+
+what are rvalue and lvalue? Rvalues represent temporary values that do not have an address. Lvalues are variables that have locations in memory, and therefore have an associated address.
+
+What are std::move and std::forward() std::move() is used to cast an object to an rvalue reference. It doesn't actually perform the move, but it prepares the object to be "moved from." I'm not actually sure what std::forward() does without looking it up.
+
+OOP:
+
+Ways to access private fields of some class? Using a public "getter method" that returns the private field. There is also the use of friend classes, but I think this is uncommon, and maybe even discouraged.
+
+Can a class inherit multiple classes? Yes. C++ supports multiple inheritance.
+
+Is static field initialized in class constructor? No. Static fields are not tied to any particular instance of a class. If they were initialized every time an object is constructed, it would defeat the point of the field being static in the first place.
+
+Can an exception be thrown in constructor / destructor? How to prevent that? Exceptions can be thrown in a constructor, but should not be thrown in a destructor. I'm a bit confused by the second part of this question: how to prevent what, exactly?
+
+What are virtual methods? Virtual methods are class methods that are defined in a base class, which may be overridden in derived classes. If a base class virtual method is pure virtual, it must be overridden by derived classes. A class with virtual methods in it has an associated vtable, which contains function pointers to each virtual method in that class. The vtable ensures that the correct method is called at runtime (for example, when a base class pointer is pointing to an object of derived type, the derived method should be called if it exists).
+
+Why do we need virtual destructor? A base class destructor should be virtual to ensure that the derived class destructor is called first when a derived class object is destroyed.
+
+Difference between abstract class and interface? An abstract class contains at least one pure virtual method. It is impossible to create an object of an abstract class. This is the mechanism by which C++ supports interfaces. Any derived class inheriting from an abstract class MUST implement the abstract class's pure virtual methods.
+
+Can be constructor virtual? No. Prior to construction, the object doesn't exist yet, so it does not have an associated vtable to refer to.
+
+How keyword const is used for class methods? Methods that do not modify internal state should be labeled const . For example, "getter" methods that just return the current state should always be labeled const. Const methods require that every method used within the const method also be const.
+
+How to protect object from copying? Delete the copy constructor using "=delete". Useful for large user-defined types which would result in expensive copies.
+
+STL containers:
+
+Difference between vector and list? std::vector supports random access. std::list is implemented as a doubly-linked list. Items in a vector are stored contiguously in memory, which is better for cache locality.
+
+Difference between map and unordered map? Keys in a std::map are stored in their logical order, so std::map is implemented as a BST. std::unordered_map is implemented as a hash table. std::map lookup time is O(logN), whereas unordered_map is O(1)
+
+When calling push_back() make iterator in vector invalid? Not completely sure. My guess would be that the end() iterator would no longer point to one-past-the-end of the vector. Would love to hear if it's more complicated than that.
+
+How to modify your class to use with map and unordered_map? The class must be hashable to use a user-defined type as a key. In the case of std::map, the comparison operators (<, >, etc.) need to be overloaded (I think just one of them but I forget which without looking it up).
+
+Threads:
+
+Difference between processes and threads? A process is a running instance of a program. Multiple threads can exist in a process's address space. Threads share process code/text, global data, etc., but threads each have their own function call stacks, program counters, stack pointers.
+
+Can the same thread be ran twise? Yes, although which threads get used are determined by the CPU's scheduler. For example, in the SPMC threading model, worker threads will pick up new work as long as there is work to do.
+
+Ways to synchronize threads? Mutex, lock guard, semaphores. I'm not sure if atomics are considered synchronization primitives.
+
+What is deadlock? When threads are waiting on another lock-holding thread to release the lock, but it never does.

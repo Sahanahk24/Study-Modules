@@ -1,0 +1,21 @@
+Catalan Numbers concept - paranthesis
+Reverse a linked List - Time complexity 
+Rotate array
+2 Sum
+find max and min in array
+binary search
+implement Vector
+implement String
+Find area of triangle
+majority element in array
+Trees
+MinHeap
+Height Permutation DP problem
+LinkedList cycle detection and remove it.
+LinkedList sort descending order and remove elements which are lesser then next greater element
+BST balance tree
+Maximum element in an array
+
+https://www.linkedin.com/posts/rajatgajbhiye_without-leetcode-you-cannot-pass-interviews-activity-7305437399218634752-vNtA?utm_source=share&utm_medium=member_desktop&rcm=ACoAADUZsqMBDfgTnXbjexCXBqDOaDaFrY4ap_g
+
+https://youtube.com/shorts/1O6xIGwNqTQ?si=-FAiTzazjs1KnMkD

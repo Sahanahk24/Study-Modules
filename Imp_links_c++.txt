@@ -1,0 +1,52 @@
+Strivers A to Z - https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2
+
+https://read.learnyard.com/low-level-design/
+
+coding Ninja DSA roadMap - https://www.naukri.com/code360/home/goals
+
+STL quiz - https://www.geeksforgeeks.org/cpp-stl-interview-questions/
+
+youtube for full pointers - https://www.youtube.com/watch?v=kiUGf_Z08RQ
+pointers quiz :  https://www.naukri.com/code360/guided-paths/pointers?nps=true
+pointers quiz - https://www.geeksforgeeks.org/quizzes/quiz-cpp-pointers/
+
+basics of C++ - https://www.naukri.com/code360/guided-paths/basics-of-c
+oops - https://www.naukri.com/code360/guided-paths/oops-in-c
+
+https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-introduction
+
+C++ programming questions - https://www.youtube.com/playlist?list=PL43pGnjiVwgTnNmcPuhvSUcSgpNfR48ui
+
+DSA Master[just refer for covering topics] - https://instabyte.io/p/dsa-masters
+
+clean coding(SOLID) - https://inside-docupedia.bosch.com/confluence/display/GG/Clean+Coding+practice 
+
+run-time errors article n problem on LRU - https://www.geeksforgeeks.org/runtime-errors/
+https://youtu.be/QC2Lc_V0rAk?si=Fvapxt401daSgFz0
+
+virtual destructor
+vtable vptr
+initializer list
+function overloading / template function 
+function overriding 
+Unit Testing, integration testing and regression testing
+OS
+
+ADAS, SOLID Principles, infotaiment, CI/CD principles, Agile, ASPICE
+embold, infotainment, problem solving, automotive, version control,Good Understanding on UML diagrams
+technologies, nosql, problem solving, design patterns, unit testing, ASPICE
+
+https://nds-association.org/nds-live-nds-classic-conceptual-differences/ 
+https://www.geeksforgeeks.org/unit-testing-software-testing/
+
+https://inside-docupedia.bosch.com/confluence/pages/viewpage.action?pageId=600660499
+
+https://inside-docupedia.bosch.com/confluence/display/CMMXIN/Object+Oriented+Concepts
+
+https://leetcode.com/assessment/overview
+
+http://qfu1kor:WorkatBOSCH@2424@rb-proxy-apac.bosch.com:8080
+
+other Hiring platform - https://www.instahyre.com/candidate/opportunities/?matching=true
+
+https://career4.successfactors.com/portalcareer?_s.crb=u6QQxSBzlRI%252f46zcjWdq2iM8vnlym643zGiRlPwp0jM%253d

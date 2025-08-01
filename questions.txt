@@ -1,0 +1,88 @@
+1. C++ Fundamentals
+Constructors (Deep & Shallow Copy)
+Assignment Operator & Comparator
+Friend Class & Function
+References vs Pointers
+Memory Allocation (Stack vs Heap)
+Initializer List
+💡 Key Questions:
+
+What is the difference between shallow and deep copy?
+Why do we need an assignment operator, and how is it different from a constructor?
+How does an initializer list work?
+2. OOP & Advanced Concepts
+Polymorphism (Virtual Functions & Overriding)
+Virtual Destructor & Execution Order
+VTable & VPtr
+Abstract Class vs Interface
+Friend Class & Function
+Static Functions & this Pointer
+Rule of 5
+Late vs Early Binding
+💡 Key Questions:
+
+How do virtual functions work internally?
+What is a virtual destructor, and why is it needed?
+Can a constructor be virtual?
+3. Smart Pointers & Memory Management
+Types of Smart Pointers (unique_ptr, shared_ptr, weak_ptr)
+Difference Between Smart Pointers
+Implementation of unique_ptr
+How shared_ptr Reference Counting Works
+Manual Memory Management (new/delete)
+💡 Key Questions:
+
+How does unique_ptr ensure only one owner?
+Can we copy or move a unique_ptr?
+How is reference counting handled in shared_ptr?
+4. Type System & Casting
+Type Casting (static_cast, dynamic_cast, reinterpret_cast, const_cast)
+R-Value & L-Value
+std::move & std::forward
+💡 Key Questions:
+
+What is the difference between static_cast and dynamic_cast?
+What are r-values and l-values?
+How does std::move differ from std::forward?
+5. Templates & Overloading
+Function Overloading vs Function Overriding
+Template Functions & Template Classes
+Operator Overloading
+💡 Key Questions:
+
+How do function templates work?
+Can we overload an operator inside a template class?
+6. Multithreading & Concurrency
+Threads & Thread Safety
+Mutex & Semaphore
+Race Conditions & Deadlocks
+Synchronization Mechanisms (std::condition_variable)
+💡 Key Questions:
+
+What is a race condition, and how can we avoid it?
+What is the difference between a mutex and a semaphore?
+7. Design Principles & Patterns
+SOLID Principles
+Singleton Pattern (Thread-Safe Implementation)
+Open/Close Principle
+Name Mangling
+💡 Key Questions:
+
+How do you implement a thread-safe Singleton in C++?
+What is the Open/Close Principle, and how can it be implemented?
+8. STL & Containers
+Vector vs List
+Implementing a Custom vector
+Map vs Unordered Map
+Push_back() and Iterator Invalidation
+💡 Key Questions:
+
+What happens when push_back() is called on a vector?
+How do we modify a class to work with unordered_map?
+9. Testing & Debugging
+Unit Testing (GTest Framework)
+Integration Testing & Regression Testing
+💡 Key Questions:
+
+How do you write a unit test in GTest?
+What is the difference between unit and integration testing?

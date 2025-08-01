@@ -1,0 +1,88 @@
+Constructors - deep and Shallow - implementation
+Assignment Operator, Comparator implementation
+Implement Polymorphism - virtual
+virtual Destructors & order of its execution 
+memory management concepts
+Smart pointers - difference in smart pointers
+type casting (dynamic_cast. why? syntax)
+Lambda expressions - basic (syntax)
+multithreading concepts - thread, Mutex, semaphores, Race condition
+Design Patterns - singleton 
+abstarct class
+Interface
+solid Principles - (Implement open/close principle)
+STL topics: Vector vs List related questions, how unordered_map works? 
+Implement vector.
+Implement String
+Copy Assignemnt Operator
+Architecture Design of Automotive Domain (V model)
+name mangling
+rule of 5
+which version of C++ do you are using what is the difference between version of C++
+friend class & function 
+Virtual keyword usage
+basic pointers implementation
+unique_pointers implementation
+smart_pointers implementation - unique, weak, shared
+vtable vptr
+initializer list ? Why and when to use it.
+implement function overloading / template for function overloading with different datatypes (use auto keyword)
+implement function overriding 
+Unit Testing, Gtest, CI/CD, integration testing and regression testing (basic) (just to check if you know the flow)
+Implement operator overloading - new, ==, delete, <<, >>
+"123" -> 6 (add all characters from a string to a get a single number"
+singleTon - create an object and make sure only one object is created 
+Template class -> 2 types
+function overriding
+Late and early binding
+sorting - descending order
+static function n this pointer
+roles and responsibilities - introduction
+Gtest framework
+nested namespace
+explicit keyword used in class - constructor
+const expression
+Macro? what will the scope of macro if defined within a function rather globally
+Lambda expression. To predict output with [=]
+
+
+Below question I got from Online
+
+C++ basics:
+Difference between references and pointers?
+Difference btw memory allocation in stack and on heap?
+What kinds of smart points do exist?
+How unique_ptr is implemented? How do we force that only one owner of the object exist in - unique_ptr ?
+How does shared_ptr work? How reference counter is synchronized between objects?
+Can we copy unique_ptr or pass it from one object to another?
+what are rvalue and lvalue?
+What are std::move and std::forward()
+
+OOP:
+Ways to access private fields of some class?
+Can a class inherit multiple classes?
+Is static field initialized in class constructor?
+Can an exception be thrown in constructor / destructor? How to prevent that?
+What are virtual methods?
+Why do we need virtual destructor?
+Difference between abstract class and interface?
+Can be constructor virtual?
+How keyword const is used for class methods?
+How to protect object from copying?
+
+STL containers:
+-Difference between vector and list?
+Difference between map and unordered map?
+When calling push_back() make iterator in vector invalid?
+How to modify your class to use with map and unordered_map?
+
+Threads:
+Difference between processes and threads?
+Can the same thread be ran twise?
+Ways to synchronize threads?
+What is deadlock?
+
+
+BOSCH:
+
+https://alumni.bosch-india-software.com/
