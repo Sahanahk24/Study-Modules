@@ -13,8 +13,9 @@ int main()
 	vector<int>::iterator itr;
 	cout<<"using iterator"<<endl;
 	for(itr=v.begin();itr!=v.end();itr++)
-		cout<<++*itr<<endl;
-	cout<<"using for each loop"<<endl;
+		cout<<++*itr<<" ! ";
+	cout<<"\nusing for each loop"<<endl;
 	for(int x:v)
-		cout<<x<<endl;
+		cout<<x<<" | ";
+	cout<<endl;
 }
